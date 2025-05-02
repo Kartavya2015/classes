@@ -1,61 +1,51 @@
 <!DOCTYPE html>
 <html>
-    
 <head>
-    <style>
-    
+<style>
     div{
-        right: 30px;border: 3px solid #73ad21;
-    }
-    
-    div.absolute{
-        position: absolute;
-        left: 100px;
-        border: 3px solid #73ad21;
-        
+    right: 30px;
+    left: 45px;
     }
 
     div.fixed{
         position: fixed;
-        top:0;
-        right: 20px;
-        width: 100px;
-        border: 3px solid #73ad21;
+        bottom:250px;
+        left: 30px;
+        border: 10px solid red
     }
 
-    div.sticky{
+div.absolute{
+        position: absolute;
+        bottom: 67px;
+        right: 40px;
+        border: 10px solid red
+    }
+
+div.sticky{
         position: sticky;
-        top: 1px;
-        left: 20px;
-        width: 100px;
-        border: 3px solid #73ad21;
+        left: 45px;
+        right: 56px;
+        border: 10px solid red
     }
 
-    div.relative{
+div.relative{
         position: relative;
-        left: 100px;
-        border: 3px solid #73ad21;
+        top: 89;
+        right: 67px;
+        border: 10px solid red
     }
-    </style>
-    </head>
 
-    <body>
-    <h2>positionning</h2>
-<div>
-    div with no positon property
-</div>
-<div class="sticky">
-div with sticky position property
-</div>
-<div class="relative">
-div with relative position property    
-</div>
-<div class="absolute">
-div with absolute position property
-</div>
-<div class="fixed">
-div with position fixed property
-</div>
-<div style="hight 1880px;border: none;"></div>
+</style>
+</head>
+
+<body>
+    <div> nothing?</div>
+<div class="sticky">better</div>
+<div class="absolute">nice</div>
+<div class="fixed">fixed?</div>
+<div class="relative">times of india:the news is...li..</div>
+
+
 </body>
+
 </html>

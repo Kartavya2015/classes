@@ -1,25 +1,61 @@
 <!DOCTYPE html>
 <html>
-
+    
 <head>
-<style>
+    <style>
+    
     div{
-        background-color: aquamarine;
-        color:blue;
-        width: 34px;
-        border: 20px solid yellow;
-        
-padding: 40px;
-margin: 50px;
+        right: 30px;border: 3px solid #73ad21;
     }
     
-    
-</style>
-</head>
+    div.absolute{
+        position: absolute;
+        left: 100px;
+        border: 3px solid #73ad21;
+        
+    }
 
-<body>
-    <div> colourful </div>
-<div>border!<h2>amazing</h2></div>
+    div.fixed{
+        position: fixed;
+        top:0;
+        right: 20px;
+        width: 100px;
+        border: 3px solid #73ad21;
+    }
+
+    div.sticky{
+        position: sticky;
+        top: 1px;
+        left: 20px;
+        width: 100px;
+        border: 3px solid #73ad21;
+    }
+
+    div.relative{
+        position: relative;
+        left: 100px;
+        border: 3px solid #73ad21;
+    }
+    </style>
+    </head>
+
+    <body>
+    <h2>positionning</h2>
+<div>
+    div with no positon property
+</div>
+<div class="sticky">
+div with sticky position property
+</div>
+<div class="relative">
+div with relative position property    
+</div>
+<div class="absolute">
+div with absolute position property
+</div>
+<div class="fixed">
+div with position fixed property
+</div>
+<div style="hight 1880px;border: none;"></div>
 </body>
-
 </html>

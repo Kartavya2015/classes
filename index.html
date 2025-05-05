@@ -1,50 +1,68 @@
 <!DOCTYPE html>
+
 <html>
+
 <head>
-<style>
-    div{
-    right: 30px;
-    left: 45px;
-    }
 
-    div.fixed{
-        position: fixed;
-        bottom:250px;
-        left: 30px;
-        border: 10px solid red
-    }
+    <style>
+        .flex-container {
 
-div.absolute{
-        position: absolute;
-        bottom: 67px;
-        right: 40px;
-        border: 10px solid red
-    }
+            display: flex;
 
-div.sticky{
-        position: sticky;
-        left: 45px;
-        right: 56px;
-        border: 10px solid red
-    }
+            flex-wrap: nowrap;
 
-div.relative{
-        position: relative;
-        top: 89;
-        right: 67px;
-        border: 10px solid red
-    }
+            background-color: rebeccapurple;
 
-</style>
+            flex-direction: column;
+
+        }
+
+        .flex-container>div {
+
+            background-color: 
+            
+            aqua;
+
+            width: 100px;
+
+            margin: 10px;
+
+            text-align: center;
+
+            line-height: 100px;
+
+            font-size: 99px;
+
+            
+
+        }
+    </style>
+
 </head>
 
 <body>
-    <div> nothing?</div>
-<div class="sticky">better</div>
-<div class="absolute">nice</div>
-<div class="fixed">fixed?</div>
-<div class="relative">times of india:the news is...li..</div>
 
+    <h1>Flexible Boxes</h1>
+
+    <div class="flex-container">
+
+        <div>1</div>
+
+        <div>2</div>
+
+        <div>3</div>
+
+        <div>4</div>
+
+        <div>5</div>
+
+        <div>6</div>
+
+        <div>7</div>
+
+        <div>8</div>
+
+    </div>
 
 </body>
 

@@ -1,65 +1,52 @@
 <!DOCTYPE html>
-
 <html>
-
 <head>
-
-    <style>
-        .flex-container {
-
-            display: flex;
-
-            flex-wrap: nowrap;
-
-            background-color: rgba(0, 0, 255, 0.842);
-
-            flex-direction: column;
-
-        }
-
-        .flex-container>div {
-
-            background-color:
-
-                aqua;
-
-            width: 200px;
-
-            margin: 12px ;
-
-            text-align: center;
-
-            line-height: 35px;
-
-            font-size: 34px ;
-
-
-
-        }
-    </style>
-
+<style>
+.container {
+  display: grid;
+  grid-template-areas:
+    "header header"
+    "menu content"
+    "footer footer";
+  grid-template-columns: 1fr 3fr;
+  gap: 5px;
+  background-color: #2521f377;
+  padding: 23px;
+}
+.container > div {
+  background-color: rgb(234, 233, 237);
+  padding: 34px;
+}
+.container > div.header {
+  grid-area: header;
+  text-align: center;
+}
+.container > div.menu {
+  grid-area: menu;
+}
+.container > div.content {
+  grid-area: content;
+}
+.container > div.footer {
+  grid-area: footer;
+}
+</style>
 </head>
-
 <body>
 
-    <h1> Boxes</h1>
+<h1>CSS Grid Layout</h1>
 
-    <div class="flex-container">
+<p>The Grid Layout Module offers a grid-based layout system, with rows and columns.</p>
+<p>The Grid Layout Module makes it easy to design complex and responsive web pages without using floats and positioning:</p>
 
-        <div>nice</div>
-
-        <div>seat</div>
-
-        <div>order</div>
-
-        <div>milk</div>
-
-        <div>melody</div>
-
-        <div>pizza</div>
-
-    
+<div class="container">
+  <div class="header"><h2>My Header</h2></div>
+  <div class="menu"><h2>Menu</h2></div>
+  <div class="content"></p><h1>main</h1></div>
+  <div class="footer"><h4>Footer</h4></div>
+</div>
 
 </body>
 
 </html>
+

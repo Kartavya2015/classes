@@ -1,61 +1,26 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-    <style>
-.container{display:grid;
- grid-template-areas:
-    "header header"
-    "menu content"
-    "footer footer";
-  grid-template-columns: 4px,4px;
-  gap: 5px;
-  background-color: #f32121;
-  padding: 23px;
-}
-.container > div {
-  background-color: rgb(15, 236, 22);
-  padding: 34px;
-}
-.container > div.header {
-  grid-area: header;
-  text-align: center;
-}
-.container > div.menu {
-  grid-area: menu;
-}
-.container > div.content {
-  grid-area: content;
-}
-.container > div.footer {
-  grid-area: menu;
-}
-
-.container> div.45{
-    grid-area:menu;
-}
-</style>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </head>
-
 <body>
-
-    <div class="container">
-        <div class="header">
-            <h2>grid</h2>
-        </div>
-        <div class="menu">
-            <h2>pasta</h2>
-        </div>
-        <div class="content">
-            </p>
-            <h1>100 rupees
-        </div>
-        <div class="footer">
-            <h4>ice cream</h4>
-        </div>
-        <div class="45">50 rupees</div>
-    </div>
-
+​
+<div class="container-fluid">
+  <h1>Hello World!</h1>
+  <p>Resize the browser window to see the effect.</p>
+  <p>The columns will automatically stack on top of each other when the screen is less than 768px wide.</p>
+  <div class="row">
+    <div class="col-sm-4" style="background-color:lavender;">grid</div>
+    <div class="col-sm-4" style="background-color:lavenderblush;">grid2</div>
+    <div class="col-sm-4" style="background-color:lavender;">grid3</div>
+  </div>
+</div>
+​
 </body>
-
 </html>
+​

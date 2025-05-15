@@ -1,30 +1,44 @@
-<!DOCTYPE html>
+<!DOCTYPE html><!--tell about the document type-->
+
 <html lang="en">
 
 <head>
-    <title>Cards</title>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
-    <link rel="stylesheet" herf="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-</head>
-
-<body>
-    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    </head>
+    <body>
     <div class="container">
-        <div class="card" style="width:18rem;">
-            <img class="card-img-top"
-                src="https://t3.ftcdn.net/jpg/03/46/83/96/360_F_346839683_6nAPzbhpSkIp8pmAwfkC7c5eD7wYws.jpg"
-                alt="card image cap">
-            <div class="card-body">
-                <h5 class="card title">Username</h5>
-                <p class="card-text">Passionate about programing</p>
+        <h2>Carousel Example</h2>
+        <div id="myCarousel" class="carousel slide"data-ride="carousel">
+            <ol class="carousel indicators">
+                <Li data-target="#myCarousel" data ride to="0" class="active"></Li>
+                <Li data-target="#myCarousel" data ride to="1"></Li>
+                <Li data-target="#myCarousel" data ride to="2"></Li>
+            </ol>
+            <div class="carousel inner">
+<div class="item active">
+    <img src="pic.jpg"alt="image 1">
+</div>
+<div class="item ">
+    <img src="pic1.jpg" alt="image 2">
+</div>
+<div class="item ">
+    <img src="pic2.jpg" alt="Penguin">
+</div>
+</div>
 
-                <a href="https://www.codingal.com/batches/d193b1d6-97ac-4c9a-bd0a-29d7545a4ed4/classroom/">see profile</a>
-               </div>
-             </div>
+<a class="left carousel-control"herf=""data slide="prev">
+    <span class="glyphicon glyphicon-chevron-left"></span>
+    <span class="sr-only">previous</span>
+</a>
+<a class="right carousel-control" herf="" data slide="prev">
+    <span class="glyphicon glyphicon-chevron-left"></span>
+    <span class="sr-only">next</span>
+</a>
         </div>
     </div>
-</body>
-
-</html>
+    </body>
+    </html>

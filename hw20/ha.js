@@ -1,0 +1,27 @@
+< !DOCTYPE html >
+    <html>
+
+        <head>
+
+            <title>practice</title>
+
+        </head>
+
+        <body>
+            <h2>addition</h2>
+            <script>
+                function sumOf TwoNumbers(){
+                    let x, y, z;
+                x = 5;
+                y = 6;
+                z = x + y;
+
+                return z;
+        }
+                let sum = sumOf TwoNumbers();
+                console.log('the sum of x and y is' + sum);
+                the sum of x and y is( + sum)    </script>
+            <p> i did the runing for both![real!]the ran link is=file:///C:/Users/smita/OneDrive/Desktop/coding%20and%20ai%20and%20robotics%20practice%20area/home%20work/hw20/index.html</p>
+        </body>
+
+    </html>

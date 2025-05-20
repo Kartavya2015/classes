@@ -1,26 +1,31 @@
 <!DOCTYPE html>
 <html>
-
 <head>
-
-    <title>welcome to the world of javascript</title>
-
+    <style>
+        .alert{color:aquamarine;
+        background: red;
+    padding: 5px;
+}
+    </style>
 </head>
-
 <body>
-    <h2>welcome to the world of javascript</h2>
-    <script>
-        function sumOf TwoNumbers(){
-            let x, y, z;
-            x = 5;
-            y = 6;
-            z = x + y;
+<header>
+    <h1 id="heading">Welcome</h1>
+    <p>Hello</p>
+</header>
+<p>How are you?</p>
+<script>
+    let div = document.createElement('div');
+div.id = "paragraph"
+div.className = "alert";
+div.innerHTML = "<p>Congrats! You have created a div. </p>";
+document.body.append(div);
 
-            return z;
-        }
-        let sum = sumOf TwoNumbers();
-        console.log('the sum of x and y is' + sum);
-    </script>
+/*2nd step*/
+let heading = document.getElementById("heading");
+heading.innerHTML = '&#128512';
+
+document.querySelector('header p').innerHTML = "<strong>Good Job!</strong>"
+</script>
 </body>
-
 </html>

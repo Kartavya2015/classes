@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+    <h2>JavaScript HTML DOM</h2>
+
+    
+
+    <p id="demo"></p>
+
+    <script>
+        const element = document.getElementsByTagName("p");
+
+        document.getElementById("demo").innerHTML = 'the sun is in the centere of the solar system.' + element[0].innerHTML;
+        document.getElementById("demo").innerHTML = 'Earth is the only planet in the habitable zone.' + element[0].innerHTML;
+        document.getElementById("demo").innerHTML = '<strong>Jupiter is the <i>largest </i>plantet in the soloar system.</strong>' + element[0].innerHTML;
+        document.getElementById("demo").innerHTML = 'neptune is the last planet.' + element[0].innerHTML;
+        document.getElementById("demo").innerHTML = 'the planents order is muecury,venus,earth,mars,jupiter,saturn,uranus,neptune.' + element[0].innerHTML;
+
+    </script>
+
+</body>
+
+</html>

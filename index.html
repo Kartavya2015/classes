@@ -1,31 +1,43 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <style>
-        .alert{color:aquamarine;
-        background: red;
-    padding: 5px;
-}
-    </style>
-</head>
-<body>
-<header>
-    <h1 id="heading">Welcome</h1>
-    <p>Hello</p>
-</header>
-<p>How are you?</p>
-<script>
-    let div = document.createElement('div');
-div.id = "paragraph"
-div.className = "alert";
-div.innerHTML = "<p>Congrats! You have created a div. </p>";
-document.body.append(div);
+    <head>
+        <title>A Creepy Story</title>
+<style>
+    body.dark{
+        color: white;
+        background: black;
+    }
 
-/*2nd step*/
-let heading = document.getElementById("heading");
-heading.innerHTML = '&#128512';
+    button{
+        display:block;
+        margin: 5px;
+    }
 
-document.querySelector('header p').innerHTML = "<strong>Good Job!</strong>"
-</script>
-</body>
+    .textEntry{
+        margin margin-top: 12px;
+        margin-bottom:15px;
+    }
+</style>
+    </head>
+    <body>
+        <h1>The Basmemt</h1>
+        <p id="story">I wanted to find my friend, and he was hiding in the basement.</p>
+        <button onclick="goDark()">Get in the mood</button>
+        <div class="textEntry">Type your name here,if you dare: <input type="text" id="name"> </div>
+        <button onclick="typeAndScream()">Please,Please Don't click me</button>
+        <button onclick="finishTheStory()">Tell me what happend!</button>
+        <script>
+            function typeAndScream(){
+                var personName = document.getElementById("name").value;
+                alert("I told you not to do that" + personName);
+            }
+
+            function goDark(){
+                document.body.className = "dark"
+            }
+            function finishTheStory() {
+                  getElementById("story").innerHTML = "so I Carefully Searched The Damp Dungeon.There you are!"
+                }
+        </script>
+    </body>
 </html>

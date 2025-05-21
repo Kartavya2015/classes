@@ -26,8 +26,11 @@
         <div class="textEntry">Type your name here,if you dare: <input type="text" id="name"> </div>
         <button onclick="typeAndScream()">Please,Please Don't click me</button>
         <button onclick="finishTheStory()">Tell me what happend!</button>
+        <audio id="audio" src="http://-me.co/ouch.mp3"Type="audio/mpeg"></audio>
         <script>
-            function typeAndScream(){
+            function typeAndScream()
+            document.getElementById(audio).play;
+            {
                 var personName = document.getElementById("name").value;
                 alert("I told you not to do that" + personName);
             }

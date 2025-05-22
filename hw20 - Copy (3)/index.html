@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Replit</title>
+    <style>
+        .rectangel {
+            border: 1px solid black;
+            width: 200px;
+            height: 200px;
+            margin: auto;
+        }
+
+        .buttno {
+            padding: 20px;
+            width: 200px;
+            margin: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Make changes to the rectangle</h2>
+    <div class="rectangel"></div>
+    <div class="buttno">
+        <button onclick="changeToCircle()">Make circle</button>
+
+        <div class="buttno">
+            <button onclick="hide()">hide</button>
+
+            <div class="buttno">
+                <button onclick="show()">show</button>
+            </div>
+            <script>
+                let div = document.querySelector('.rectangel');
+
+                function changeToCircle() {
+                    div.style.borderRadius = "50%";
+                }
+                function hide() {
+                    div.style.display = "none";
+                }
+                function show() {
+                    div.style.display = "block";
+                }
+                div.onmouseenter = function () {
+                    div.style.background = 'blue'
+                }
+                div.onmouseout = function () {
+                    div.style.background = 'none'
+                }
+            </script>
+</body>
+
+</html>

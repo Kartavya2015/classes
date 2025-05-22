@@ -1,46 +1,53 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>A Creepy Story</title>
-<style>
-    body.dark{
-        color: white;
-        background: black;
-    }
+        <title>Replit</title>
+        <style>
+            .rectangle{
+                border: 1px solid black;
+                width: 200px;
+                height: 200px;
+                margin: auto;
+            }
 
-    button{
-        display:block;
-        margin: 5px;
-    }
-
-    .textEntry{
-        margin margin-top: 12px;
-        margin-bottom:15px;
-    }
-</style>
+            .buttons{
+                padding:20px;
+                width:200px;
+                margin:auto;
+            }
+        </style>
     </head>
     <body>
-        <h1>The Basmemt</h1>
-        <p id="story">I wanted to find my friend, and he was hiding in the basement.</p>
-        <button onclick="goDark()">Get in the mood</button>
-        <div class="textEntry">Type your name here,if you dare: <input type="text" id="name"> </div>
-        <button onclick="typeAndScream()">Please,Please Don't click me</button>
-        <button onclick="finishTheStory()">Tell me what happend!</button>
-        <audio id="audio" src="http://-me.co/ouch.mp3"Type="audio/mpeg"></audio>
-        <script>
-            function typeAndScream()
-            document.getElementById(audio).play;
-            {
-                var personName = document.getElementById("name").value;
-                alert("I told you not to do that" + personName);
-            }
+        <h2>Make changes to the rectangle</h2>
+        <div class="rectangle"></div>
+        <div class="buttons">
+            <button onclick="changeToCircle()">Make circle</button>
 
-            function goDark(){
-                document.body.className = "dark"
+            <div class="buttons">
+                <button onclick="hide()">hide</button> 
+
+                <div class="buttons">
+                    <button onclick="show()">show</button>
+        </div>
+<script>
+    let div = document.querySelector('.rectangle');
+
+    function changeToCircle(){
+        div.style.borderRadius = "50%";
+    }
+    function hide() {
+            div.style.display = "none";
+        }
+        function show() {
+                div.style.display = "block";
             }
-            function finishTheStory() {
-                  getElementById("story").innerHTML = "so I Carefully Searched The Damp Dungeon.There you are!"
+            div.onmouseenter = function ()
+            {
+                div.style.background = 'red'
+            }
+            div.onmouseout = function () {
+                    div.style.background = 'none'
                 }
-        </script>
+</script>
     </body>
 </html>

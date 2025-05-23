@@ -1,65 +1,69 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <style>
-            body{
-                text-align: center;
-            }
 
-            nav{
-                text-align: center;
-            }
+<head>
+    <style>
+        body {
+            text-align: center;
+        }
 
-            body{
+        nav {
+            text-align: center;
+        }
+
+        body {
             background-color: #e6e6e6;
             padding: 10px;
-            }
+        }
 
-            ul{
-                list-style-type:none;
-                margin:0;
-                padding:0;
-                overflow:hidden;
-            }
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
 
-            li a{
-               display: block;
-            }
+        li a {
+            display: block;
+        }
 
-            li{
-                float: left;
-            }
+        li {
+            float: left;
+        }
 
-            li a:hover{
-                background-color: rgb(219, 130, 130);
-            }
-        </style>
-        <body>
-             <nav>
-                <ul>
-                    <li><a herf="index.html">home</a> </li><br>
-                    <li><a herf="6-about.html">About</a> </li><br>
-                    <li><a herf="6-contact.html">contact</a> </li>
-                </ul>
-             </nav>
-             <h2>Intresting iformation</h2>
-             <img src="download.jpg"/>
-             <br />
-             <button onclick="tiger();">Readmore!</button>
-             <p id="tiger-info"></p>
-             <img src="download (1).jpg" />
-             <br />
-            <button onclick="lion();">Readmore!</button>
-            <p id="lion-info"></p>
-            <script>
-                function tiger(){
-                    document.getElementById("tiger-info").innerHTML="The tiger [panrhera tigres]is the largest extint cat species and a member of "
-                }
-                function lion() {
-                    document.getElementById("lion-info").innerHTML="the lion [panthera leo] is a species in the familiy feldiae and a member of the cat family"
-
-                }
-            </script>
-        </body>
+        li a:hover {
+            background-color: rgb(1, 55, 249);
+        }
+    </style>
     </head>
+
+<body>
+    <nav>
+        
+           <button> <a herf="#">home</a></button><br>
+           <button> <a herf="https://www.google.com/search?q=cats+and+dogs+information&num=10&sca_esv=3c74e91ebde8004a&sxsrf=AE3TifO6XDw27s6uzXwO_ifHhbs90xy4fA%3A1747990976529&ei=wDkwaIDaH-PhseMP4rHZsQw&oq=cats+and+dogs+info&gs_lp=Egxnd3Mtd2l6LXNlcnAaAhgCIhJjYXRzIGFuZCBkb2dzIGluZm8qAggAMgUQABiABDIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgsQABiABBiGAxiKBTILEAAYgAQYhgMYigVI-3RQ_wNYjWdwBHgBkAEEmAHeAaABxB2qAQYwLjIzLjK4AQHIAQD4AQGYAhmgAucZqAIUwgIKEAAYsAMY1gQYR8ICDRAuGIAEGLADGEMYigXCAg0QABiABBiwAxhDGIoFwgIKECMYgAQYJxiKBcICChAAGIAEGLEDGArCAgoQABiABBhDGIoFwgIHECMYJxjqAsICChAjGCcY6gIYiwPCAhMQABiABBhDGLQCGIoFGOoC2AEBwgIEECMYJ8ICChAuGIAEGEMYigXCAggQLhiABBixA8ICCxAAGIAEGLEDGIMBwgILEAAYgAQYsQMYigXCAggQABiABBixA8ICCxAuGIAEGNEDGMcBwgIXEC4YgAQYsQMYlwUY3AQY3gQY4ATYAQHCAhYQLhiABBixAxjRAxhDGIMBGMcBGIoFwgINEAAYgAQYsQMYQxiKBcICDhAuGIAEGMcBGI4FGK8BwgIlEC4YgAQYsQMY0QMYQxiDARjHARiKBRiXBRjcBBjeBBjgBNgBAcICDRAAGIAEGLEDGBQYhwLCAhEQLhiABBixAxjRAxiDARjHAcICEBAuGIAEGLEDGEMYgwEYigXCAgsQABiABBiRAhiKBcICChAuGIAEGBQYhwLCAhEQLhiABBiRAhixAxjUAhiKBcICCxAuGIAEGJECGIoFwgILEC4YgAQYxwEYrwGYAwbxBSdEDGdnVI6viAYBkAYKugYGCAEQARgBkgcGNC4yMC4xoAeMkgKyBwYwLjIwLjG4B9EZwgcGMC4xLjI0yAd2&sclient=gws-wiz-serp">About</a> </button><br>
+            <button><a herf="https://www.codingal.com">contact</a></button>
+        
+    </nav>
+    
+    <img src="download (2).jpg" />
+    <br>
+    <button onclick="cat();">Readmore!</button>
+    <p id="cat-info"></p>
+    <img src="download.jpg" />
+    <br>
+    <button onclick="dog();">Readmore!</button>
+    <p id="dog-info"></p>
+   <script>
+    function cat(){
+        document.getElementById("cat-info").innerHTML = "Cats are the smallest species of the cat family"
+    }
+
+    function dog(){
+        document.getElementById("dog-info").innerHTML="Dogs are animals with a geat sense of smell"
+    }
+   </script>    
+</body>
+
+
 </html>

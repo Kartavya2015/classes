@@ -1,53 +1,65 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Replit</title>
         <style>
-            .rectangle{
-                border: 1px solid black;
-                width: 200px;
-                height: 200px;
-                margin: auto;
+            body{
+                text-align: center;
             }
 
-            .buttons{
-                padding:20px;
-                width:200px;
-                margin:auto;
+            nav{
+                text-align: center;
+            }
+
+            body{
+            background-color: #e6e6e6;
+            padding: 10px;
+            }
+
+            ul{
+                list-style-type:none;
+                margin:0;
+                padding:0;
+                overflow:hidden;
+            }
+
+            li a{
+               display: block;
+            }
+
+            li{
+                float: left;
+            }
+
+            li a:hover{
+                background-color: rgb(219, 130, 130);
             }
         </style>
-    </head>
-    <body>
-        <h2>Make changes to the rectangle</h2>
-        <div class="rectangle"></div>
-        <div class="buttons">
-            <button onclick="changeToCircle()">Make circle</button>
-
-            <div class="buttons">
-                <button onclick="hide()">hide</button> 
-
-                <div class="buttons">
-                    <button onclick="show()">show</button>
-        </div>
-<script>
-    let div = document.querySelector('.rectangle');
-
-    function changeToCircle(){
-        div.style.borderRadius = "50%";
-    }
-    function hide() {
-            div.style.display = "none";
-        }
-        function show() {
-                div.style.display = "block";
-            }
-            div.onmouseenter = function ()
-            {
-                div.style.background = 'red'
-            }
-            div.onmouseout = function () {
-                    div.style.background = 'none'
+        <body>
+             <nav>
+                <ul>
+                    <li><a herf="index.html">home</a> </li><br>
+                    <li><a herf="6-about.html">About</a> </li><br>
+                    <li><a herf="6-contact.html">contact</a> </li>
+                </ul>
+             </nav>
+             <h2>Intresting iformation</h2>
+             <img src="download.jpg"/>
+             <br />
+             <button onclick="tiger();">Readmore!</button>
+             <p id="tiger-info"></p>
+             <img src="download (1).jpg" />
+             <br />
+            <button onclick="lion();">Readmore!</button>
+            <p id="lion-info"></p>
+            <script>
+                function tiger(){
+                    document.getElementById("tiger-info").innerHTML="The tiger [panrhera tigres]is the largest extint cat species and a member of "
                 }
-</script>
-    </body>
+                function lion() {
+                    document.getElementById("lion-info").innerHTML="the lion [panthera leo] is a species in the familiy feldiae and a member of the cat family"
+
+                }
+            </script>
+        </body>
+    </head>
 </html>

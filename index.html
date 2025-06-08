@@ -1,33 +1,68 @@
 <!DOCTYPE html>
 <html>
-
-<head>
-    
-    <style>
-        
-        .footer {
-            position: fixed;
-            left: 0;
-            bottom: 0;
-            width: 100%;
-            height: 10%;
-            background-color: black;
-            color: white;
-            text-align: center;
+    <head>
+        <title>Navbar</title>
+        <style>
+        body{
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
         }
-    </style>
-</head>
-
-<body>
-    <div class="footer">
-        <p>@copy all rights reserved by Ishita singh
+        .topnav{
+            overflow: hidden;
+            background-color: #333;
+        }
+        .topnav a{
+            float: left;
+            color: #1affa3;
+            text-align: center;
+            padding:14px 16px;
+            text-decoration: none;
+            font-size: 17px;
+        }
+        .topnav a:hover{
+            background-color: #ddd;
+            color: black;
+        }
+        .topnav a:active{
+            background-color: #ffe066;
+            color:black;
+        }
+        </style>
+    </head>
+    <body>
+    <div class="topnav">
+        <a class="active" herf="home">Home</a>
+        <a herf="#">About_Us</a>
+        <a herf="#">Gallery</a>
+        <a herf="#">Contact_Us</a>
     </div>
-    <section class="footer">
-    website about solar system,sun,earth.
-    Only for kids education.    
+    <section>
+        <img class="mySlides" src="download.jpg" style="height: 500px;">
+        <img class="mySlides" src="download(1).jpg" style="height: 500px;">
+        <img class="mySlides" src="download(2).jpg" style="height: 500px;">
+        <img class="mySlides" src="download(3).jpg" style="height: 500px;">
+        <img class="mySlides" src="download(4).jpg" style="height: 500px;">
+        <img class="mySlides" src="download(5).jpg" style="height: 500px;">
+        <img class="mySlides" src="download(6).jpg" style="height: 500px;">
+        <img class="mySlides" src="download(7).jpg" style="height: 500px;">
+        <img class="mySlides" src="download(8).jpg" style="height: 500px;">
+        <img class="mySlides" src="download(9).jpg" style="height: 500px;">
     </section>
+    <script>
+        var myIndex = 0;
+        carousel();
 
-
-</body>
-
+        function carousel() {
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+            for (i = 0;i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            myIndex++;
+            if (myIndex > x.length; i++) {myIndex = 1}
+            x[myIndex-1].style.display = "block";
+            setTimeout(carousel,3000);
+        }
+    </script>
+    </body>
 </html>

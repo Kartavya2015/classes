@@ -1,7 +1,8 @@
-# if statement example
+number=int(input("enter Number to  check"))
+print("number to be checked :",number)
 
-if 10 > 5:
+if number%2==0:
+    print("this a even number")
 
- print ("10 greater than 5")
-
-print("Program ended")
+else:
+    print("this is an odd number ")

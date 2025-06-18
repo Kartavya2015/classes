@@ -1,8 +1,15 @@
-number=int(input("enter Number to  check"))
-print("number to be checked :",number)
+a = [1, 2, 3, 4, 5]
 
-if number%2==0:
-    print("this a even number")
+# List of strings
 
-else:
-    print("this is an odd number ")
+b = ['apple', 'banana', 'cherry']
+
+# Mixed data types
+
+c = [1, 'hello', 3.14, True]
+
+print(a)
+
+print(b)
+
+print(c)

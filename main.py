@@ -1,5 +1,4 @@
-def my_function():
+name = input("Please enter your name")
+age = input("Please enter your age")
 
- print("Hello from a function")
-
-my_function()
+print("Hello,"+ name +"! you are"  + age + "years old")

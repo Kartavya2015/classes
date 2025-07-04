@@ -1,33 +1,25 @@
-#empty dictionary
-my_dict = {}
+#empty tuple
+empty_tuple = ()
+my_tuple = ()
 
-#dictionary with interger keys
-my_dict = {1: 'apple', 2: 'banana', 3: 'cherry'}
+#tuple with integers
+my_tuple = (1,2,3,4,5)
 
-#dictionary with mixed keys
-my_dict = {'name': 'John', 1: [2, 4, 3]}
+#tuple with mixed data types
+my_tuple = (1, "jack", 3.5)
 
-my_dict = {'name': "jack", 'age':26}
+#nested tuple
+nested_tuple = (1, 2, (3, 4), 5)
 
-#output
-print(my_dict['name'])
-print(my_dict['age'])
+#returning a tuple
+def return_tuple():
+    return (1, 2, 3)
 
-#update value
-my_dict['age'] = 27
-print(my_dict)
+#accessing tuple elements using indexing
+my_tuple = ('bath', 'he he he', 'cancled', 'for', 'fun', 'today')
+print(my_tuple[1])
+print(my_tuple[5])
 
-#add item
-my_dict['address'] = 'Downtown'
-print
-
-#remove paticular item
-my_dict.pop('age')
-print(my_dict)
-
-#accsessing keys
-print("Adress:", my_dict.get('address'))
-
-#remove all elements
-my_dict.clear()
-print(my_dict)
+#Iterating through a tuple
+for letter in (my_tuple[1:6]):
+    print("hello", letter)

@@ -1,12 +1,17 @@
-#write in file using with() function
-with open('index.html', 'w') as file:
-    file.write("Hi! I am penguin and i am 1 year old")
-file.close()
+new_file = open('index.html', 'x')
+new_file.close
 
-with open('index.html', 'r') as file:
-    data = file.readlines()
-    print(" words are")
-    for line in data:
-        word = line.split
-        print(word)
-        file.close
+import os
+print("processing...")
+if os.path.exists("index.html"):
+    os.remove("my.py")
+
+else:
+    print("sorry,check for\ndoes file exist?\nis the name correct?\nwe can create new!")
+
+my_py = open("my_py", "w")
+my_py.write("hi nice to meet you\n i am siri")
+my_py.close()
+
+os.remove('index.html')
+os.rmdir('part 2')

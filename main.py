@@ -1,7 +1,12 @@
-file_read = open('index.html', 'r')
-print(file_read.read)
-file_read.close
+#write in file using with() function
+with open('index.html', 'w') as file:
+    file.write("Hi! I am penguin and i am 1 year old")
+file.close()
 
-file_write = open('index.html', 'w')
-print(file_write.write)
-file_write.close
+with open('index.html', 'r') as file:
+    data = file.readlines()
+    print(" words are")
+    for line in data:
+        word = line.split
+        print(word)
+        file.close

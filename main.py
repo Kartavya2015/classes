@@ -1,14 +1,20 @@
-#print a scentence
-print("Welcome to the world of programming!")
+#First persons birthday
+paul_birthday = 7, "october"
 
-#print a number
-print(46)
+#Second persons birthday
+mary_birthday = 7, "may"
 
-#print newline
-print("Hello Kartavya. \n")
+#third persons birthday
+john_birthday = 7, "june"
 
-#print multiple arguments for us
-print("Kartavya", 10)
+#fourth persons birthday
+kiara_birthday = 25, "september"
 
-#end arguments of print statment
-print("My school name is Vibgyor High", end="*")
+#fifth persons birthday
+Aarav_birthday = 10, "July"
+#time to print the variables
+print("Paul's birthday is on:", paul_birthday,"\n")
+print("Mary's birthday is on:", mary_birthday,"\n")
+print("John's birthday is on:", john_birthday,"\n")
+print("Kiara's birthday is on:", kiara_birthday,"\n")
+print("Aarav's birthday is on:", Aarav_birthday, end='*')

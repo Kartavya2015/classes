@@ -1,0 +1,12 @@
+empty_list = []
+print()
+
+numbers = [1, 2, 3, 4, 5]
+print(numbers)
+
+triples = [1, 2, 3] * 3
+print(triples)
+
+aList = [1, 2, 3, 4, 5, 6]
+alist = aList [::-1]
+print(alist, "\n")
